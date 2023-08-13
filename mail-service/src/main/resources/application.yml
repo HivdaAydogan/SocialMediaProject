@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL}
+  config:
+    import: "configserver:"
+  application:
+    name: mail-service-application
+

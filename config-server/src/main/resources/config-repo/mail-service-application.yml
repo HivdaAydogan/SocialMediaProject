@@ -1,0 +1,29 @@
+server:
+  port: 8085
+
+
+spring:
+#  zipkin:
+#    enabled: true
+#    base-url: http://localhost:9411
+#    service:
+#      name: email-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: java8
+    password: root
+
+  mail:
+    # sunucu olarak kullanacağımız maili ifade eder.
+    # kullanıcının mailine bir mail göndermek için sunucu görevi üstlenir.
+    username: javababoost8@gmail.com
+    password: ${emailpassword}
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

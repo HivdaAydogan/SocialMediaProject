@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api-gateway-service/SocialMedia-Java8.api-gateway-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api-gateway-service/SocialMedia-Java8.api-gateway-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/SocialMedia-Java8.auth-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/SocialMedia-Java8.auth-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server-git/SocialMedia-Java8.config-server-git.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server-git/SocialMedia-Java8.config-server-git.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server/SocialMedia-Java8.config-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server/SocialMedia-Java8.config-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mail-service/SocialMedia-Java8.mail-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mail-service/SocialMedia-Java8.mail-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/userprofile-service/SocialMedia-Java8.userprofile-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/userprofile-service/SocialMedia-Java8.userprofile-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth-service/com.socialmedia.SocialMedia-Java8.auth-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth-service/com.socialmedia.SocialMedia-Java8.auth-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config-server/com.socialmedia.SocialMedia-Java8.config-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config-server/com.socialmedia.SocialMedia-Java8.config-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/userprofile-service/com.socialmedia.SocialMedia-Java8.userprofile-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/userprofile-service/com.socialmedia.SocialMedia-Java8.userprofile-service.main.iml" />
+    </modules>
+  </component>
+</project>

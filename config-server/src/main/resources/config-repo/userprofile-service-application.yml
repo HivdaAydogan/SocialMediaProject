@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+#  zipkin:
+#    enabled: true
+#    base-url: http://localhost:9411
+#    service:
+#      name: userprofile-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: java8SocialMedia
+      username: Java8User
+      password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: java8
+    password: root
+
+openfeign:
+  auth-manager-url: http://localhost:8090/api/v1/auth

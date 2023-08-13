@@ -1,0 +1,40 @@
+server:
+  port: 80 #localhost <=> 80 --> http://localhost:80/ --> localhost'un default portudur
+
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: api-gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service  #route' un karakterini belirtir, farklı olmak zorundadır
+          predicates:
+            - Path=/auth/**  #auth/register, auth/find-all
+          uri: http://localhost:8090
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback/auth-service
+        - id: user-profile-service
+          predicates:
+            - Path=/user-profile/**
+          uri: http://localhost:8080
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback/user-profile-service
+        - id: mail-service
+          predicates:
+            - Path=/mail/**
+          uri: http://localhost:8085
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback/mail-service
+      default-filters:
+        - RewritePath= /(?<segment>.*),/api/v1/$\{segment}

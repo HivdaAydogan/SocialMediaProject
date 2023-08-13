@@ -1,0 +1,47 @@
+ext {
+    versions = [
+            springBoot    : "2.7.9",
+            postgresql    : "42.6.0",
+            lombok        : "1.18.26",
+            mapstruct     : "1.5.5.Final",
+            openapi       : "1.6.14",
+            springCloud   : "3.1.5",
+            circuitBreaker: "2.1.6",
+            jwt           : "4.3.0"
+    ]
+
+
+    libs = [
+            springBootWeb               : "org.springframework.boot:spring-boot-starter-web:$versions.springBoot",
+            springBootJpa               : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot",
+            springBootValidation        : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
+            postgresql                  : "org.postgresql:postgresql:$versions.postgresql",
+            lombok                      : "org.projectlombok:lombok:$versions.lombok",
+            mapstruct                   : "org.mapstruct:mapstruct:$versions.mapstruct",
+            mapstructProcessor          : "org.mapstruct:mapstruct-processor:$versions.mapstruct",
+            openapi                     : "org.springdoc:springdoc-openapi-ui:$versions.openapi",
+            //mongoDB
+            mongoDB                     : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
+            //feignClient
+            springOpenFeign             : "org.springframework.cloud:spring-cloud-starter-openfeign:${versions.springCloud}",
+            //config-server
+            springCloudConfigServer     : "org.springframework.cloud:spring-cloud-config-server:$versions.springCloud",
+            springCloudConfigStarter    : "org.springframework.cloud:spring-cloud-starter-config:$versions.springCloud",
+            springCloudConfigClient     : "org.springframework.cloud:spring-cloud-config-client:$versions.springCloud",
+            //zipkin
+            springCloudSleuthZipkin     : "org.springframework.cloud:spring-cloud-sleuth-zipkin:$versions.springCloud",
+            springCloudSleuth           : "org.springframework.cloud:spring-cloud-starter-sleuth:$versions.springCloud",
+            //rabbitmq
+            springBootRabbitMQ          : "org.springframework.boot:spring-boot-starter-amqp:$versions.springBoot",
+            //java mail sender
+            springBootMailSender        : "org.springframework.boot:spring-boot-starter-mail:$versions.springBoot",
+            //apigateway
+            springCloudStarterApiGateway: "org.springframework.cloud:spring-cloud-starter-gateway:$versions.springCloud",
+            springCloudCircuitBreaker   : "org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j:$versions.circuitBreaker",
+            springCloudCircuitReactor   : "org.springframework.cloud:spring-cloud-starter-circuitbreaker-reactor-resilience4j:$versions.circuitBreaker",
+            //Security
+            springBootSecurity          : "org.springframework.boot:spring-boot-starter-security:$versions.springBoot",
+            //jwt
+            javaJWT                     : "com.auth0:java-jwt:$versions.jwt",
+    ]
+}
